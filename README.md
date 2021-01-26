@@ -1,6 +1,4 @@
 # coffee_ec
-
- - a mock ec site to test EC service development
  
 this tutorial product contains thinking and learning process of following knowledges :
  - Vue Unit testing with Jest, nuxt
