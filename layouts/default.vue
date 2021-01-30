@@ -7,7 +7,7 @@
             v-icon {{ item.icon }}
           v-list-item-content
             v-list-item-title(v-text="item.title")
-    v-app-bar(:clipped-left="clipped" fixed="" app="")
+    v-app-bar(:clipped-left="clipped" fixed app color="brown lighten-3")
       v-app-bar-nav-icon(@click.stop="drawer = !drawer")
         v-btn(icon="" @click.stop="miniVariant = !miniVariant")
           v-icon mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}
@@ -22,6 +22,12 @@
     v-main
       v-container
         nuxt
+    v-footer
+      .container
+        p
+        | &copy; 2021 |
+        i.fa.fa-value(aria-hidden='true') &nbsp;
+        a(href='#') 
 
 </template>
 

@@ -11,7 +11,8 @@
               v-rating(:value="product.rating" readonly half-increments dense size=13)
               .grey--text {{product.rating }}
             v-card-actions
-              v-btn(@click="purchase(product)" primary) Purchase
+              v-btn(primary) 
+                Nuxtlink Purchase
 
             
 </template>
@@ -53,12 +54,6 @@ export default {
     }
   },
   methods:{
-    getProductData(){
-      
-    },
-    purchase(product){
-      alert(product.title);
-    }
   }
 }
 </script>
